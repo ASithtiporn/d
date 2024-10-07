@@ -1,0 +1,87 @@
+/* main.css */
+
+/* พื้นหลังและฟอนต์ */
+body {
+    background-color: #5b5b66;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* ส่วนหัว */
+h1 {
+    font-size: 36px;
+    color: #160cab;
+    margin-top: 20px;
+}
+
+/* เส้นแบ่ง */
+hr {
+    width: 80%;
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 20px 0;
+}
+
+/* กล่องข้อความสำหรับโพสต์ */
+textarea {
+    width: 80%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #3e5266;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* ปุ่มต่างๆ */
+button {
+    background-color: #1900da;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* กล่องข้อความแสดงโพสต์ */
+#topic, #reply1, #reply2, #reply3 {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* ปรับแต่งการแสดงผลสำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+    textarea, #topic, #reply1, #reply2, #reply3 {
+        width: 90%;
+    }
+
+    button {
+        width: 45%;
+        font-size: 14px;
+    }
+}
